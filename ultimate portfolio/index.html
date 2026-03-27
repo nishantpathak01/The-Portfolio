@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Nishant Kumar Pathak — Full Stack Developer & Software Engineer portfolio showcasing projects, skills, and experience." />
+  <meta name="keywords" content="Full Stack Developer, Software Engineer, React, Node, Web Developer, Portfolio" />
+  <meta name="author" content="Nishant Kumar Pathak" />
+  <meta property="og:title" content="Nishant Kumar Pathak | Full Stack Developer & Software Engineer" />
+  <meta property="og:description"
+    content="Portfolio of Nishant Kumar Pathak — Full Stack Developer & Software Engineer." />
+  <meta property="og:type" content="website" />
+  <title>Nishant Kumar Pathak | Full Stack Developer & Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Nishant Kumar Pathak home">
+        <span class="logo-bracket">&lt;</span>NKP<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="navMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HOME / HERO ========== -->
+  <section id="home" class="hero-section" aria-label="Hero introduction">
+    <div class="hero-bg-orb orb-1" aria-hidden="true"></div>
+    <div class="hero-bg-orb orb-2" aria-hidden="true"></div>
+    <div class="hero-bg-orb orb-3" aria-hidden="true"></div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        <span>Open to Opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-greeting">Hello, I'm</span>
+        <span class="title-name">Nishant Kumar Pathak</span>
+        <span class="title-role" id="typewriter" aria-label="Full Stack Developer & Software Engineer"></span>
+      </h1>
+      <p class="hero-description">
+        A passionate <strong>Full Stack Developer & Software Engineer</strong> at Lovely Professional University,
+        building
+        scalable web applications. I thrive on creating robust backend systems and modern, dynamic frontends with a
+        strong focus on problem-solving.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="viewProjectsBtn">
+          <span>View My Projects</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary" id="getInTouchBtn">Get In Touch</a>
+        <a href="assets/cv/Nishant_Pathak_CV.pdf" download="Nishant_Pathak_CV.pdf" class="btn btn-secondary"
+          id="downloadCVBtnHero">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+      <div class="hero-socials" role="list" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/nishant01pathak" target="_blank" rel="noopener noreferrer"
+          class="social-link" aria-label="LinkedIn profile" role="listitem">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="https://github.com/nishantpathak53" target="_blank" rel="noopener noreferrer" class="social-link"
+          aria-label="GitHub profile" role="listitem">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <a href="mailto:npathak62057@gmail.com" class="social-link" aria-label="Send email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"
+            aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about-section" aria-label="About me">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Aspiring Full Stack Engineer with a passion for scalable software and modern web
+          infrastructure</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="about-avatar" aria-hidden="true" style="border-radius: 50%;">
+            <img src="assets/profile.jpg" alt="Nishant Kumar Pathak Profile" class="avatar-image" style="border-radius: 50%;" />
+            <div class="avatar-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path d="M12 2L3.09 8.26L4 21h16l.91-12.74L12 2z" />
+              </svg>
+              B.Tech CSE
+            </div>
+          </div>
+          <div class="about-stats" role="list" aria-label="Quick stats">
+            <div class="stat-card glass-card" role="listitem">
+              <span class="stat-number">6.2</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card glass-card" role="listitem">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card glass-card" role="listitem">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Certs</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            I'm <strong>Nishant Kumar Pathak</strong>, a B.Tech Computer Science student at <strong>Lovely Professional
+              University, Punjab</strong>. I have a strong focus on Full Stack Development and I'm passionate about
+            building scalable, high-performance web applications.
+          </p>
+          <p class="about-text">
+            My goal is to secure a growth-oriented role as a <strong>Software Engineer</strong>,
+            where I can apply my robust foundation in CS concepts (DBMS, OS, CN, SQL, OOPs) along with modern frameworks
+            to deliver business value and innovate digital experiences.
+          </p>
+          <p class="about-text">
+            I thrive in problem-solving scenarios, and I'm dedicated to actively improving my academic performance and
+            technical depth. Through consistency and a strong growth mindset, I actively bridge the gap between academic
+            theory and real-world project building.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">📍 Location</span>
+              <span class="info-value">Punjab, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🎓 University</span>
+              <span class="info-value">Lovely Professional University</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📞 Phone</span>
+              <span class="info-value">+91-9102426246</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📧 Email</span>
+              <span class="info-value">npathak62057@gmail.com</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="https://github.com/nishantpathak53" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary" id="githubBtn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              View GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/nishant01pathak" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary" id="linkedinBtn">LinkedIn Profile</a>
+            <a href="assets/cv/Nishant_Pathak_CV.pdf" download="Nishant_Pathak_CV.pdf" class="btn btn-secondary"
+              id="downloadCVBtnAbout">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section education-section" aria-label="Education background">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle">A strong computer science foundation built at reputed institutions across India</p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="edu-timeline" role="list" aria-label="Education timeline">
+
+        <!-- LPU -->
+        <div class="edu-entry" id="eduLPU" role="listitem">
+          <div class="edu-timeline-marker" aria-hidden="true">
+            <div class="edu-dot edu-dot--primary"></div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card glass-card">
+            <div class="edu-card-header">
+              <div class="edu-icon" aria-hidden="true">🎓</div>
+              <div class="edu-header-text">
+                <h3 class="edu-degree">Bachelor of Technology — Computer Science &amp; Engineering</h3>
+                <p class="edu-institution">Lovely Professional University</p>
+                <p class="edu-location">📍 Phagwara (Jalandhar), Punjab</p>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-date-badge">2023 — Present</span>
+                <span class="edu-gpa-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"
+                    aria-hidden="true">
+                    <polyline points="18 15 12 9 6 15" />
+                  </svg>
+                  CGPA: 6.2 (↑ Improving)
+                </span>
+              </div>
+            </div>
+
+            <!-- Coursework chips -->
+            <div class="edu-coursework">
+              <h4 class="edu-subsection-title">Relevant Coursework</h4>
+              <div class="edu-courses" role="list" aria-label="Relevant courses">
+                <span class="course-chip course-chip--software" role="listitem">Database Management Systems</span>
+                <span class="course-chip course-chip--cloud" role="listitem">Operating Systems</span>
+                <span class="course-chip course-chip--cloud" role="listitem">Computer Networks</span>
+                <span class="course-chip course-chip--software" role="listitem">Object-Oriented Programming</span>
+                <span class="course-chip course-chip--software" role="listitem">Full Stack Development</span>
+              </div>
+            </div>
+
+            <!-- Highlights row -->
+            <div class="edu-highlights">
+              <div class="edu-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>State-Level Hackathon Competitor — Coding Blocks LPU</span>
+              </div>
+              <div class="edu-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Active in full stack web development projects using React, Node.js &amp; databases</span>
+              </div>
+              <div class="edu-highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"
+                  aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Built comprehensive eCommerce &amp; rental applications as capstone projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="edu-entry" id="eduIntermediate" role="listitem">
+          <div class="edu-timeline-marker" aria-hidden="true">
+            <div class="edu-dot edu-dot--secondary"></div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card edu-card--compact glass-card">
+            <div class="edu-card-header">
+              <div class="edu-icon edu-icon--sm" aria-hidden="true">📚</div>
+              <div class="edu-header-text">
+                <h3 class="edu-degree">Intermediate (Class XII)</h3>
+                <p class="edu-institution">St. Mariam's School</p>
+                <p class="edu-location">📍 Jharkhand</p>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-date-badge edu-date-badge--sm">2023</span>
+                <span class="edu-gpa-badge edu-gpa-badge--sm">68.8%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Matriculation -->
+        <div class="edu-entry edu-entry--last" id="eduMatriculation" role="listitem">
+          <div class="edu-timeline-marker" aria-hidden="true">
+            <div class="edu-dot edu-dot--tertiary"></div>
+          </div>
+          <div class="edu-card edu-card--compact glass-card">
+            <div class="edu-card-header">
+              <div class="edu-icon edu-icon--sm" aria-hidden="true">🏫</div>
+              <div class="edu-header-text">
+                <h3 class="edu-degree">Matriculation (Class X)</h3>
+                <p class="edu-institution">St. Mariam's School</p>
+                <p class="edu-location">📍 Jharkhand</p>
+              </div>
+              <div class="edu-meta">
+                <span class="edu-date-badge edu-date-badge--sm">2021</span>
+                <span class="edu-gpa-badge edu-gpa-badge--sm">45%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /edu-timeline -->
+
+      <!-- Role-tailoring callout -->
+      <div class="edu-tailoring glass-card" id="eduTailoringBox" aria-label="Education relevance for roles">
+        <div class="edu-tailoring-header">
+          <div class="edu-tailoring-icon" aria-hidden="true">🎯</div>
+          <h3>How This Education Applies</h3>
+        </div>
+        <div class="edu-tailoring-grid">
+          <div class="edu-tailoring-item">
+            <span class="tailoring-role tailoring-role--blue">Software Development</span>
+            <p>Solid foundation in CS fundamentals like OOP and DBMS directly supports backend engineering roles.</p>
+          </div>
+          <div class="edu-tailoring-item">
+            <span class="tailoring-role tailoring-role--cyan">Full Stack Engineering</span>
+            <p>Knowledge of Operating Systems and Networks empowers building robust APIs and highly available web
+              platforms.</p>
+          </div>
+          <div class="edu-tailoring-item">
+            <span class="tailoring-role tailoring-role--purple">Continuous Improvement</span>
+            <p>Consistent growth and real-world project work bridge the gap between academic theory and practical
+              application.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section skills-section" aria-label="Technical skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">A curated stack spanning cloud platforms, backend systems, and modern tooling</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass-card" id="skillCard1"
+          style="--skill-bg: url('../assets/skills/programming_v2.png');">
+          <div class="skill-category-header">
+            <div class="skill-icon skill-icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card" id="skillCard2"
+          style="--skill-bg: url('../assets/skills/cloud_v2.png');">
+          <div class="skill-category-header">
+            <div class="skill-icon skill-icon--cyan" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25" />
+              </svg>
+            </div>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--hot">AWS</span>
+            <span class="skill-tag skill-tag--hot">Vercel</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card" id="skillCard3"
+          style="--skill-bg: url('../assets/skills/database_v2.jpg');">
+          <div class="skill-category-header">
+            <div class="skill-icon skill-icon--purple" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              </svg>
+            </div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card" id="skillCard4"
+          style="--skill-bg: url('../assets/skills/security_v2.png');">
+          <div class="skill-category-header">
+            <div class="skill-icon skill-icon--amber" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <h3>Core Concepts</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">Operating Systems (OS)</span>
+            <span class="skill-tag">Computer Networks (CN)</span>
+            <span class="skill-tag">OOPs</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card" id="skillCard5" style="--skill-bg: url('../assets/skills/web_v2.png');">
+          <div class="skill-category-header">
+            <div class="skill-icon skill-icon--green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3>Frameworks & Libraries</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">ReactJS</span>
+            <span class="skill-tag">NodeJS</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card" id="skillCard6" style="--skill-bg: url('../assets/skills/os_bg.png');">
+          <div class="skill-category-header">
+            <div class="skill-icon skill-icon--pink" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4l3 3" />
+              </svg>
+            </div>
+            <h3>Web Fundamentals</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills Bar -->
+      <div class="soft-skills-section">
+        <h3 class="soft-skills-title">Soft Skills</h3>
+        <div class="soft-skills-list" role="list">
+          <span class="soft-skill-chip" role="listitem">⏱️ Time Management</span>
+          <span class="soft-skill-chip" role="listitem">🚀 Leadership</span>
+          <span class="soft-skill-chip" role="listitem">🧠 Problem-Solving</span>
+          <span class="soft-skill-chip" role="listitem">🔄 Adaptability</span>
+          <span class="soft-skill-chip" role="listitem">⚡ Quick Learner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects-section" aria-label="Projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world applications demonstrating full-stack and backend engineering skills</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="projects-filters" role="group" aria-label="Filter projects by technology">
+        <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+        <button class="filter-btn" data-filter="java" id="filterJava">Java</button>
+        <button class="filter-btn" data-filter="web" id="filterWeb">Web</button>
+        <button class="filter-btn" data-filter="database" id="filterDatabase">Database</button>
+      </div>
+
+      <!-- Search -->
+      <div class="projects-search-wrapper">
+        <label for="projectSearch" class="visually-hidden">Search projects</label>
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+          height="18" aria-hidden="true">
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.35-4.35" />
+        </svg>
+        <input type="search" id="projectSearch" class="projects-search" placeholder="Search projects..."
+          aria-label="Search projects" />
+      </div>
+
+      <!-- Project Cards -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Card: REBORN -->
+        <article class="project-card glass-card" data-tags="java database web" id="projectReborn" tabindex="0"
+          role="button" aria-label="View REBORN project details" style="overflow: hidden; padding-top: 0;">
+          
+          <div class="cert-thumb-wrapper cert-thumb--has-image" style="background-image: url('assets/projects/reborn_bg.jpg'); height: 180px; margin-bottom: 20px; border-radius: 20px 20px 0 0; border-bottom: 1px solid rgba(255,255,255,0.05);">
+            <div class="cert-thumb-overlay">
+              <button class="cert-view-btn" data-cert-img="assets/projects/reborn_bg.jpg"
+                data-cert-title="REBORN Artwork" data-cert-issuer="Project"
+                aria-label="View REBORN Image" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                View Artwork
+              </button>
+            </div>
+          </div>
+          
+          <div class="project-card-header" style="padding: 0 1.5rem;">
+            <div class="project-icon" aria-hidden="true">👕</div>
+            <div class="project-links">
+              <a href="https://github.com/nishantpathak53" target="_blank" rel="noopener noreferrer"
+                class="project-link" aria-label="View REBORN on GitHub" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">REBORN — Custom Clothing Platform</h3>
+          <p class="project-description">A full-stack e-commerce platform for customizable clothing with JWT-based
+            authentication, user dashboards, and real-time customization features built on a scalable architecture.</p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>JWT-based secure authentication</span>
+            </div>
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>Real-time clothing customization</span>
+            </div>
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>Production-ready scalable backend</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge tech-badge--java">Spring Boot</span>
+            <span class="tech-badge tech-badge--web">React</span>
+            <span class="tech-badge tech-badge--db">MySQL</span>
+            <span class="tech-badge">Tailwind CSS</span>
+            <span class="tech-badge">JWT</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-date">📅 2024</span>
+            <button class="btn-details" aria-label="View full details of REBORN project">Details →</button>
+          </div>
+        </article>
+
+        <!-- Card: Ride My Car -->
+        <article class="project-card glass-card" data-tags="web" id="projectRideMyCar" tabindex="0" role="button"
+          aria-label="View Ride My Car project details">
+          <div class="project-card-header">
+            <div class="project-icon" aria-hidden="true">🚗</div>
+            <div class="project-links">
+              <a href="https://github.com/nishantpathak53" target="_blank" rel="noopener noreferrer"
+                class="project-link" aria-label="View on GitHub" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Ride My Car — Vehicle Rental Web App</h3>
+          <p class="project-description">A responsive web-based vehicle rental platform with secure login/signup.
+            Features a clean architecture and modular design for an optimized frontend experience.</p>
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>Responsive UI with seamless login/signup flows</span>
+            </div>
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>Clean architecture and modular code design</span>
+            </div>
+            <div class="highlight-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span>Optimized frontend performance and accessibility</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge tech-badge--web">HTML</span>
+            <span class="tech-badge tech-badge--web">CSS</span>
+            <span class="tech-badge tech-badge--web">JavaScript</span>
+            <span class="tech-badge">Clean Architecture</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-date">📅 2024</span>
+            <button class="btn-details" aria-label="View full details of Ride My Car project">Details →</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="no-results" id="noResults" aria-live="polite" style="display:none;">
+        <p>No projects found matching your search. Try a different keyword or filter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section id="certifications" class="section certifications-section" aria-label="Certifications and achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications &amp; <span class="gradient-text">Achievements</span></h2>
+        <p class="section-subtitle">Continuous learning through structured courses and real-world competitions</p>
+      </div>
+
+      <!-- Tag Filter Bar -->
+      <div class="cert-filter-bar" role="group" aria-label="Filter certificates by topic">
+        <button class="cert-filter-btn active" data-cert-filter="all" id="certFilterAll">All</button>
+        <button class="cert-filter-btn" data-cert-filter="cpp" id="certFilterCpp">C++</button>
+        <button class="cert-filter-btn" data-cert-filter="dsa" id="certFilterDsa">DSA</button>
+        <button class="cert-filter-btn" data-cert-filter="web" id="certFilterWeb">Web</button>
+        <button class="cert-filter-btn" data-cert-filter="database" id="certFilterDb">Database</button>
+        <button class="cert-filter-btn" data-cert-filter="ai" id="certFilterAi">AI / ML</button>
+        <button class="cert-filter-btn" data-cert-filter="soft" id="certFilterSoft">Soft Skills</button>
+      </div>
+
+      <div class="certs-grid" id="certsGrid">
+
+        <!-- C++ OOPs & DSA -->
+        <div class="cert-card glass-card" id="certCpp" data-cert-tags="cpp dsa training">
+          <div class="cert-thumb-wrapper cert-thumb--has-image"
+            style="background-image: url('assets/certs/cpp_cert.jpg');">
+            <div class="cert-thumb-overlay">
+              <button class="cert-view-btn" data-cert-img="assets/certs/cpp_cert.jpg"
+                data-cert-title="C++ Programming: OOPs &amp; DSA" data-cert-issuer="CSE Pathshala"
+                data-cert-id="CP-20250607-2CPP-175" aria-label="View full C++ certificate" id="viewCertCpp">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"
+                  aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="cert-icon" aria-hidden="true">⚙️</div>
+          <div class="cert-content">
+            <h3 class="cert-title">C++ Programming: OOPs &amp; DSA</h3>
+            <p class="cert-issuer">CSE Pathshala</p>
+            <p class="cert-desc">35+ hours Live Summer Training covering OOP concepts — classes, inheritance,
+              polymorphism — plus DSA: arrays, linked lists, stacks, queues, trees, and graphs.</p>
+            <div class="cert-tags-row" role="list" aria-label="Certificate topics">
+              <span class="cert-tag cert-tag--cpp" role="listitem">C++</span>
+              <span class="cert-tag cert-tag--dsa" role="listitem">DSA</span>
+              <span class="cert-tag cert-tag--oop" role="listitem">OOP</span>
+              <span class="cert-tag cert-tag--training" role="listitem">Training</span>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-date">Aug 3, 2025</span>
+              <span class="cert-id-badge" title="Certificate Number">🪪 CP-20250607-2CPP-175</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Responsive Web Design -->
+        <div class="cert-card glass-card" id="certWeb" data-cert-tags="web soft">
+          <div class="cert-thumb-wrapper cert-thumb--has-image"
+            style="background-image: url('assets/certs/freecodecamp-webdesign.jpg');">
+            <div class="cert-thumb-overlay">
+              <button class="cert-view-btn" data-cert-img="assets/certs/freecodecamp-webdesign.jpg"
+                data-cert-title="Responsive Web Design" data-cert-issuer="freeCodeCamp"
+                data-cert-id="fcc3d6e9d93-e74f-490f-b149-d2576392b337" aria-label="View full freeCodeCamp certificate"
+                id="viewCertWeb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"
+                  aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="cert-icon" aria-hidden="true">🎨</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Responsive Web Design</h3>
+            <p class="cert-issuer">freeCodeCamp</p>
+            <p class="cert-desc">Developer Certification representing approximately 300 hours of work on modern Responsive Web Design building fundamentals.</p>
+            <div class="cert-tags-row" role="list" aria-label="Certificate topics">
+              <span class="cert-tag cert-tag--web" role="listitem">HTML5</span>
+              <span class="cert-tag cert-tag--web" role="listitem">CSS3</span>
+              <span class="cert-tag cert-tag--web" role="listitem">Flexbox</span>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-date">October 9, 2023</span>
+              <span class="cert-id-badge" title="Certificate ID">🪪 fcc3d6e9d93-e74f...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- English Typing Skills -->
+        <div class="cert-card glass-card" id="certOrgComm" data-cert-tags="soft">
+          <div class="cert-thumb-wrapper cert-thumb--has-image"
+            style="background-image: url('assets/certs/typing_cert.jpg');">
+            <div class="cert-thumb-overlay">
+              <button class="cert-view-btn" data-cert-img="assets/certs/typing_cert.jpg"
+                data-cert-title="English Typing Skills" data-cert-issuer="Mindluster" data-cert-id="13031686048"
+                aria-label="View full Mindluster certificate" id="viewCertOrgComm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"
+                  aria-hidden="true">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="cert-icon" aria-hidden="true">⌨️</div>
+          <div class="cert-content">
+            <h3 class="cert-title">English Typing Skills</h3>
+            <p class="cert-issuer">Mindluster</p>
+            <p class="cert-desc">Demonstrated high proficiency in fast and accurate English typing, enhancing
+              development speed and everyday digital efficiency.</p>
+            <div class="cert-tags-row" role="list" aria-label="Certificate topics">
+              <span class="cert-tag cert-tag--soft" role="listitem">Typing</span>
+              <span class="cert-tag cert-tag--soft" role="listitem">Efficiency</span>
+              <span class="cert-tag cert-tag--soft" role="listitem">Soft Skills</span>
+            </div>
+            <div class="cert-footer">
+              <span class="cert-date">Dec 15, 2023</span>
+              <span class="cert-id-badge" title="Certificate Number">🪪 13031686048</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /certs-grid -->
+
+      <div class="cert-no-results" id="certNoResults" aria-live="polite" style="display:none;">
+        <p>No certificates match this filter. Try selecting a different category.</p>
+      </div>
+
+      <!-- Achievements -->
+      <div class="achievements-section">
+        <h3 class="achievements-title">🏆 Achievements</h3>
+        <div class="achievements-grid">
+          <div class="achievement-card glass-card achieve-card--has-image" id="achieveHackathon">
+            <div class="achieve-thumb-wrapper" style="background-image: url('assets/certs/hackathon_cert.jpg');">
+              <div class="achieve-thumb-overlay">
+                <button class="cert-view-btn" data-cert-img="assets/certs/hackathon_cert.jpg"
+                  data-cert-title="Code-A-Hunt Hackathon" data-cert-issuer="CodingBlocks LPU"
+                  aria-label="View Hackathon Participation Certificate">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"
+                    aria-hidden="true">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                  View Certificate
+                </button>
+              </div>
+            </div>
+            <div class="achievement-badge" aria-hidden="true">🥇</div>
+            <div class="achievement-content">
+              <h4>Code-A-Hunt 24-Hour Hackathon</h4>
+              <p>Participated in the "Code-A-Hunt" 24-hour hackathon safely organized by CodingBlocks LPU, Lovely Professional University (LPU). Showcased exceptional skills in coding and problem-solving.</p>
+              <span class="cert-date">Feb 29 - Mar 1, 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATE VIEWER MODAL ========== -->
+  <div class="modal-overlay cert-viewer-overlay" id="certViewerModal" role="dialog" aria-modal="true"
+    aria-label="Certificate viewer" tabindex="-1" style="display:none;">
+    <div class="cert-viewer-container">
+      <div class="cert-viewer-toolbar">
+        <div class="cert-viewer-info">
+          <span class="cert-viewer-title" id="certViewerTitle"></span>
+          <span class="cert-viewer-issuer" id="certViewerIssuer"></span>
+        </div>
+        <div class="cert-viewer-actions">
+          <span class="cert-viewer-id" id="certViewerId"></span>
+          <button class="cert-viewer-close" id="certViewerClose" aria-label="Close certificate viewer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"
+              aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="cert-viewer-img-wrapper">
+        <img src="" alt="" id="certViewerImg" class="cert-viewer-img" />
+        <div class="cert-viewer-loader" id="certViewerLoader" aria-hidden="true">
+          <svg class="spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32"
+            height="32">
+            <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact-section" aria-label="Contact me">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Open to internships, collaborations, and full-time Cloud/Dev roles</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's build something great together</h3>
+          <p>Whether you have a project in mind, a job opportunity, or just want to connect — I'm always happy to chat.
+            Reach out through the form or via any of the channels below.</p>
+          <div class="contact-channels">
+            <a href="mailto:npathak62057@gmail.com" class="contact-channel" id="emailChannel">
+              <div class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </div>
+              <div class="channel-text">
+                <span class="channel-label">Email</span>
+                <span class="channel-value">npathak62057@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/nishant01pathak" target="_blank" rel="noopener noreferrer"
+              class="contact-channel" id="linkedinChannel">
+              <div class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </div>
+              <div class="channel-text">
+                <span class="channel-label">LinkedIn</span>
+                <span class="channel-value">linkedin.com/in/nishant01pathak</span>
+              </div>
+            </a>
+            <a href="https://github.com/nishantpathak53" target="_blank" rel="noopener noreferrer"
+              class="contact-channel" id="githubChannel">
+              <div class="channel-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </div>
+              <div class="channel-text">
+                <span class="channel-label">GitHub</span>
+                <span class="channel-value">github.com/nishantpathak53</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper glass-card">
+          <form id="contactForm" class="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Full Name <span class="required"
+                  aria-hidden="true">*</span></label>
+              <input type="text" id="contactName" name="name" class="form-input" placeholder="Your name" required
+                autocomplete="name" aria-required="true" />
+              <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Email Address <span class="required"
+                  aria-hidden="true">*</span></label>
+              <input type="email" id="contactEmail" name="email" class="form-input" placeholder="you@example.com"
+                required autocomplete="email" aria-required="true" />
+              <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject" class="form-label">Subject <span class="required"
+                  aria-hidden="true">*</span></label>
+              <input type="text" id="contactSubject" name="subject" class="form-input"
+                placeholder="e.g., Job Opportunity / Collaboration" required aria-required="true" />
+              <span class="form-error" id="subjectError" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message <span class="required"
+                  aria-hidden="true">*</span></label>
+              <textarea id="contactMessage" name="message" class="form-textarea"
+                placeholder="Tell me about your project or opportunity..." rows="5" required
+                aria-required="true"></textarea>
+              <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="formSubmitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" aria-hidden="true" style="display:none;">
+                <svg class="spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                  height="18">
+                  <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                </svg>
+                Sending...
+              </span>
+            </button>
+            <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="nav-logo"><span class="logo-bracket">&lt;</span>NKP<span class="logo-bracket">/&gt;</span></span>
+          <p>Full Stack Developer & Software Engineer</p>
+        </div>
+        <div class="footer-links" role="list">
+          <a href="#home" class="footer-link" role="listitem">Home</a>
+          <a href="#about" class="footer-link" role="listitem">About</a>
+          <a href="#projects" class="footer-link" role="listitem">Projects</a>
+          <a href="#contact" class="footer-link" role="listitem">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Nishant Kumar Pathak. Built with ❤️ using HTML, CSS & JavaScript.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== PROJECT DETAIL MODAL ========== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-label="Project details"
+    tabindex="-1" style="display:none;">
+    <div class="modal-container glass-card">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"
+          aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
